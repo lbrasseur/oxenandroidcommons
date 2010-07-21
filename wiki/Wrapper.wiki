@@ -10,7 +10,7 @@ The `BeanWrapper` and `ClassWrapper` components allows wrapping of classes and o
 
 The implementation is hidden behind a `WrapperFactory`.
 
-A simple implementation is provided. Spring BeanWrapper and Commons BeanUtils implementations could be easily built, but they wouldn't run on Android
+A simple implementation is provided. `Spring BeanWrapper` and `Commons BeanUtils` implementations could be easily built, but they wouldn't run on Android
 
 = Ideas =
   * Provide a more sophisticated implementation with chained property access (using dot in property name).
