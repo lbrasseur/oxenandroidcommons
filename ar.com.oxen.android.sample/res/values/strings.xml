@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mini_orm">Mini ORM</string>
+    <!-- Genericos -->
+    
+    <string name="app_name">Oxen Android Commons Sample</string>
+    
+        
+    
+    
+    
+    
+    
+    <!-- Pantalla Profiles -->
+    
+    
+    
+    
+            
+    
+        
+    
+        
+    <!-- Pantalla Accounts -->
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    <!-- Pantalla Miscelaneos -->
+    
+    
+    
+        
+    
+    
+        
+    
+    
+        
+    <!-- Errores -->
+    
+    
+	
+    	
+	
+	
+	
+	
+	
+	      
+      
+      
+    
+    
+    
+            
+    
+          
+</resources>
