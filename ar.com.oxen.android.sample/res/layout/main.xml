@@ -25,5 +25,6 @@
               
     
                 
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/minOrmSampleButton" android:text="@string/mini_orm"></Button>
+<Button android:layout_height="wrap_content" android:id="@+id/minOrmSampleButton" android:text="@string/mini_orm" android:layout_width="fill_parent"></Button>
+<Button android:layout_height="wrap_content" android:id="@+id/mvpButton" android:text="MVP" android:layout_width="fill_parent"></Button>
 </LinearLayout>
