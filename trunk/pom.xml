@@ -23,12 +23,12 @@
 		<repository>
 			<id>java.net</id>
 			<name>java.net</name>
-			<url>http://download.java.net/maven/2/</url>
+			<url>http://download.java.net/maven/2</url>
 		</repository>
 		<repository>
 			<id>oxen</id>
 			<name>oxen</name>
-			<url>http://oxen.no-ip.org:10080/maven/</url>
+			<url>http://oxen.no-ip.org:10080/artifactory/repo</url>
 		</repository>
 	</repositories>
 </project>
