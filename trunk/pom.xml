@@ -11,14 +11,6 @@
 		<module>ar.com.oxen.android.commons</module>
 		<module>ar.com.oxen.android.sample</module>
 	</modules>
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 	<repositories>
 		<repository>
 			<id>java.net</id>
@@ -28,7 +20,19 @@
 		<repository>
 			<id>oxen</id>
 			<name>oxen</name>
-			<url>http://oxen.no-ip.org:10080/artifactory/repo</url>
+			<url>http://servidor.oxen.com.ar/artifactory/repo</url>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>servidor.oxen.com.ar</id>
+			<name>servidor.oxen.com.ar-snapshots</name>
+			<url>http://servidor.oxen.com.ar/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+		<repository>
+			<id>servidor.oxen.com.ar</id>
+			<name>servidor.oxen.com.ar-release</name>
+			<url>http://servidor.oxen.com.ar/artifactory/libs-release-local</url>
+		</repository>
+	</distributionManagement>
 </project>
