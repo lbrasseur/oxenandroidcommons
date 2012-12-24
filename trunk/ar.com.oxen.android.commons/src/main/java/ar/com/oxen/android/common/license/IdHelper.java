@@ -4,6 +4,7 @@ import javax.inject.Inject;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.provider.Settings.Secure;
@@ -22,8 +23,12 @@ public class IdHelper {
 		TelephonyManager telephonyManager = (TelephonyManager) this.context
 				.getSystemService(Context.TELEPHONY_SERVICE);
 
-		/* Requires READ_PHONE_STATE */
-		return telephonyManager.getDeviceId();
+		if (telephonyManager != null) {
+			/* Requires READ_PHONE_STATE */
+			return telephonyManager.getDeviceId();
+		} else {
+			return "";
+		}
 	}
 
 	public String getPseudoId() {
@@ -46,12 +51,28 @@ public class IdHelper {
 		WifiManager wifiManager = (WifiManager) this.context
 				.getSystemService(Context.WIFI_SERVICE);
 
-		/* requires android.permission.ACCESS_WIFI_STATE or comes as null */
-		return wifiManager.getConnectionInfo().getMacAddress();
+		WifiInfo connectionInfo = null;
+
+		if (wifiManager != null) {
+			connectionInfo = wifiManager.getConnectionInfo();
+		}
+
+		if (connectionInfo != null) {
+			/* requires android.permission.ACCESS_WIFI_STATE or comes as null */
+			return connectionInfo.getMacAddress();
+		} else {
+			return "";
+		}
 	}
 
 	public String getBluetoothMac() {
-		/* requires android.permission.BLUETOOTH */
-		return BluetoothAdapter.getDefaultAdapter().getAddress();
+		BluetoothAdapter bluetoothAdapter = BluetoothAdapter
+				.getDefaultAdapter();
+		if (bluetoothAdapter != null) {
+			/* requires android.permission.BLUETOOTH */
+			return bluetoothAdapter.getAddress();
+		} else {
+			return "";
+		}
 	}
 }
