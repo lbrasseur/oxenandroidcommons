@@ -83,7 +83,7 @@ public class LicenseHelper<I extends Serializable> {
 					this.context.openFileOutput("requerimiento.txt",
 							Context.MODE_WORLD_WRITEABLE))));
 			writer.println(this.licenseSerializer
-					.serializeLicenceInfo((I) new DefaultLicenseInfo("Apple",
+					.serializeLicenceInfo((I) new DefaultLicenseInfo("Apple","mi modulo",
 							null, "mi codigo", hardwareIdProvider
 									.getHardwareId())));
 		} catch (Exception e) {
