@@ -1,0 +1,7 @@
+# Introduction #
+
+This section contains information about changes made between different releases.
+
+# 1.0-SNAPSHOT #
+  * Initial release
+  * Licensing support
